@@ -1,3 +1,4 @@
+package StrategyPattern.sample;
 import java.util.Scanner;
 
 interface TravelToRailwayStation
