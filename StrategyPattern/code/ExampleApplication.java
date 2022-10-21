@@ -1,12 +1,17 @@
-package StrategyPattern.code;
+/**
+ * Example Application that implements the Strategy Pattern
+ * @author Amar Suhendra (2008107010091)
+ * @version 1.0
+ * @since 2022-10-21
+ */
 import java.util.Scanner;
 
 public class ExampleApplication {
   public static void main(String[] args) {
-    
+
     // Inintialize the variables
     int a = 0;
-    int b = 0; 
+    int b = 0;
     int result = 0;
     String action = "";
 
@@ -14,7 +19,7 @@ public class ExampleApplication {
     Context context = new Context();
 
     try (
-      Scanner scanner = new Scanner(System.in)) {
+        Scanner scanner = new Scanner(System.in)) {
       // Scann for user input
       System.out.print("Enter the first number: ");
       a = scanner.nextInt();
@@ -24,7 +29,9 @@ public class ExampleApplication {
       // Scann for user action
       System.out.print("Enter the action to perform: ");
       action = scanner.next();
-    }catch (Exception e) {
+
+    } catch (Exception e) {
+      // Handle exception
       System.out.println("Error: " + e.getMessage());
     }
 
